@@ -3,7 +3,7 @@ import Login from "./Login";
 
 export default function NavBar() {
   return (
-    <div className="flex items-center bg-maristblack">
+    <div className="flex fixed h-[100px] items-center bg-maristblack w-screen">
       <img
         src="/src/assets/marist-logo.png"
         className="w-[230px] h-[50px]"
