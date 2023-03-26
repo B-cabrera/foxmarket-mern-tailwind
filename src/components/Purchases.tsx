@@ -7,28 +7,14 @@ export default function Purchases() {
   const [history, setHistory] = useState<TPurchase[]>([
     {
       seller: 'Brenden',
-      item: 'Burger',
-      cost: 200,
-      location: 'Hancock',
+      item: 'T-Shirt',
+      cost: 400,
+      location: 'Donnelly',
       date: new Date()
     },
     {
       seller: 'Jeff',
-      item: 'Burger',
-      cost: 200,
-      location: 'Hancock',
-      date: new Date()
-    },
-    {
-      seller: 'Wonk',
-      item: 'Burger',
-      cost: 200,
-      location: 'Hancock',
-      date: new Date()
-    },
-    {
-      seller: 'Trey',
-      item: 'Burger',
+      item: 'Shoes',
       cost: 200,
       location: 'Hancock',
       date: new Date()

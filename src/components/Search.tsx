@@ -17,7 +17,7 @@ export default function Search() {
               className="pr-[10px]" />
           </button>
           <input type="text" 
-          className="rounded-lg h-8 w-[300px] mt-4 focus:outline-none text-black bg-gray-200 focus:bg-gray-400 pl-3"
+          className="rounded-lg h-8 w-3/4 mt-4 focus:outline-none text-black bg-gray-200 focus:bg-gray-400 pl-3"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)} >
           </input>

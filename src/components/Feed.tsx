@@ -7,22 +7,22 @@ import Posting from "./Posting";
 export default function Feed() {
   const [posts, setPosts] = useState<TPost[]>([
     {
-      title: 'Gucci T-Shirt',
+      title: 'T-Shirt',
       price: 40,
       location: 'North End',
       description: 'Size Small Trying to get rid quick',
     },
     {
-      title: 'Burger King Foot Lettuce',
+      title: 'Old Pants',
       price: 200,
       location: 'Donnelly',
-      description: 'McChiken with foot fungus'
+      description: 'Good condition'
     },
     {
-      title: 'Bacon Balls',
+      title: 'Old Shoes',
       price: 900,
       location: 'McCann',
-      description: 'Balls dipped in Bacon'
+      description: 'Some old shoes I dont want anymore'
     },
   ]);
   return (

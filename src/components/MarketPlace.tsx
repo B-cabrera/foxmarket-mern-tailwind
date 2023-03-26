@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { faArrowDownShortWide, faBagShopping, faBars, faShop, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDownShortWide, faBagShopping, faBars, faRightFromBracket, faShop, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Catalog from "./Catalog";
 import Search from "./Search";
+import { LoggingIn } from "./Landing";
 
 export type Pages = 'Purchases' | 'Account' | 'Items' | 'Feed'
 
-export default function MarketPlace() {
+export default function MarketPlace({flipper}: LoggingIn) {
   const [currentPage, setCurrentPage] = useState<Pages>('Feed');
 
 
@@ -46,6 +47,14 @@ export default function MarketPlace() {
               style={{ color: "#b81c1c", }}
               className="ml-3" />
             <p className="pl-2 text-2xl p-2">My Items</p>
+          </span>
+          <span className="flex items-center bg-redfox rounded-lg bg-opacity-0 hover:bg-opacity-[0.1] hover:cursor-pointer">
+            <FontAwesomeIcon
+              icon={faRightFromBracket}
+              style={{ color: "#b81c1c", }}
+              className="ml-3" />
+            <p className="pl-2 text-2xl p-2"
+            onClick={() => flipper()}>Logout</p>
           </span>
         </div>
       </div>

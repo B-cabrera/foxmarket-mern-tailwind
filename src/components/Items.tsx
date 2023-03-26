@@ -6,29 +6,29 @@ import TPost from "../types/TPost"
 export default function Items() {
   const [items, setItems] = useState<TPost[]>([
     {
-      title: 'Gucci T-Shirt',
+      title: 'T-Shirt',
       price: 40,
       location: 'North End',
       description: 'Size Small Trying to get rid quick',
       date: new Date(Date.now())
     },
     {
-      title: 'Burger King Foot Lettuce',
+      title: 'Old Pants',
       price: 200,
       location: 'Donnelly',
-      description: 'McChiken with foot fungus',
+      description: 'Good condition',
       date: new Date(Date.now())
     },
     {
-      title: 'Bacon Balls',
+      title: 'Old Shoes',
       price: 900,
       location: 'McCann',
-      description: 'Balls dipped in Bacon',
+      description: 'Some old shoes I dont want anymore',
       date: new Date(Date.now())
     },
   ])
   return (
-    <div className="flex flex-col col-span-3 h-screen items-center gap-[30px]">
+    <div className="flex flex-col col-span-3 h-screen items-center gap-[30px] bg-red-100">
       <p className="text-5xl font-bold pt-10 pb-2">My Items</p>
       {
         items.map((item) => {
